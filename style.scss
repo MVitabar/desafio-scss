@@ -1,0 +1,38 @@
+$dark-bg-color: #000;
+$light-bg-color: #fff;
+$dark-font-color: #000;
+$light-font-color: #fff;
+
+@mixin light-theme() {
+  background-color: $light-bg-color;
+  color: $dark-font-color;
+}
+
+@mixin dark-theme() {
+  background-color: $dark-bg-color;
+  color: $light-font-color;
+}
+
+.light-theme {
+  @include light-theme();
+}
+
+.dark-theme {
+  @include dark-theme();
+}
+
+button {
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    background-color: red;
+  }
+}

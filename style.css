@@ -1,0 +1,23 @@
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+button {
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+button:hover {
+  opacity: 0.7;
+}
+button:active {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
